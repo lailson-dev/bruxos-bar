@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruxo's Bar - Lailson Conceição - Estudos - Desenvolvimento Web</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body id="override-bs">
+
+    <header
+        class="header__page container-fluid bg-warning sticky-top d-flex justify-content-around align-items-center py-4 shadow">
+        <div class="header__page-logo">
+            <a href="#">Bruxo's Bar</a>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-link"><a href="#">Sobre</a></li>
+                <li class="nav-link"><a href="#">Cardápio</a></li>
+                <li class="nav-link"><a href="#">Reserva</a></li>
+                <li class="nav-link"><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main__page">
+        <section class="main__page-welcome text-center text-white d-flex flex-column justify-content-center">
+            <h1 class="display-1 text-shadow">Bem vindo ao Bruxo's Bar</h1>
+            <h3 class="display-4 text-shadow">O botequinho baiano em <span>Minas Gerais</span></h3>
+        </section>
+
+        <section class="main__page-about container py-5 my-5">
+            <div class="row">
+                <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="about__title mb-5 text-uppercase">
+                        <h1>Sobre Nós</h1>
+                    </div>
+                    <div class=" about__info d-flex">
+                        <div class="col-md-12">
+                            <div class="about__info-text row">
+                                <div class="col-md-6">
+                                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+                                        asperiores
+                                        eveniet,
+                                        optio
+                                        blanditiis ullam odit quo ducimus temporibus officia nulla. Placeat obcaecati
+                                        labore
+                                        quidem
+                                        iste. Quia distinctio accusamus unde suscipit. Placeat obcaecati labore quidem
+                                        iste. Quia distinctio accusamus unde suscipit.</p>
+                                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                                        quia
+                                        assumenda, sed
+                                        asperiores
+                                        at illum eum debitis ad, esse nostrum iusto quisquam! Eum esse possimus ad nobis
+                                        recusandae
+                                        minima architecto. Esse nostrum iusto quisquam! Eum esse possimus ad nobis
+                                        recusandae
+                                        minima architecto.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about__info-image">
+                                        <img src="assets/images/boteco.jpg"
+                                            alt="Bruxo's Bar - Boteco Baiano em Minas Gerais" class="img-fluid">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- CARDÁPIO -->
+        <section class="main__page carousel slide container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Cardápio</h1>
+                    </div>
+                    <div class="col-md-12 text-md-right lead data-ride=" carousel" id="postsCarousel"">
+                        <a class=" btn btn-outline-secondary prev" href="" title="go back">
+                        <<a class="btn btn-outline-secondary next" href="" title="more">>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container pt-2 carousel-inner">
+                <div class="row row-equal carousel-item active m-t-0">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-img-top card-img-top-250">
+                                <img class="img-fluid" src="assets/images/cardapio/camarao-alho.jpg" alt="Carousel 1">
+                            </div>
+                            <div class="card-block p-t-2">
+                                <h6 class="text-center">Somente aos Domingos</h6>
+                                <h3 class="text-center">
+                                    <a href="#">Camarão no Alho e Oléo</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-img-top card-img-top-250">
+                                <img class="img-fluid" src="assets/images/cardapio/picanha-brasileira.jpg"
+                                    alt="Carousel 1">
+                            </div>
+                            <div class="card-block p-t-2">
+                                <h6 class="text-center">Todos os dias</h6>
+                                <h3 class="text-center">
+                                    <a href="#">Picanha à Brasileira</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-img-top card-img-top-250">
+                                <img class="img-fluid" src="assets/images/cardapio/cheesecake-cereja.jpg"
+                                    alt="Carousel 3">
+                            </div>
+                            <div class="card-block p-t-2">
+                                <h6 class="text-center">Todos os dias</h6>
+                                <h3 class="text-center">
+                                    <a href>Cheesecake de Cereja</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-equal carousel-item">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-img-top card-img-top-250">
+                                <img class="image-equals" src="assets/images/cardapio/salmao-legumes.jpg"
+                                    alt=" Carousel 4">
+                            </div>
+                            <div class="card-block p-t-2">
+                                <h6 class="text-center">Todos os dias</h6>
+                                <h3 class="text-center">
+                                    <a href>Salmão aos Legumes</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-img-top card-img-top-250">
+                                <img class="image-equals" src="assets/images/cardapio/salada-grega.jpg"
+                                    alt=" Carousel 4">
+                            </div>
+                            <div class="card-block p-t-2">
+                                <h6 class="text-center">Todos os dias</h6>
+                                <h3 class="text-center">
+                                    <a href>Salada Grega</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-img-top card-img-top-250">
+                                <img class="image-equals" src="assets/images/cardapio/jardim-cogumelos.jpg"
+                                    alt=" Carousel 4">
+                            </div>
+                            <div class="card-block p-t-2">
+                                <h6 class="text-center">Todos os dias</h6>
+                                <h3 class="text-center">
+                                    <a href>Jarim de Cogumelos</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESERVA -->
+        <section class="booking container py-5 my-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                        <div class="booking__title">
+                            <h1>Faça sua reserva</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="booking__form">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="input-name" id="input-name"
+                                                placeholder="Nome completo">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="email" name="input-email" id="input-email"
+                                                placeholder="Seu email">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="input-message" rows="3" 
+                                                placeholder="Mensagem"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="tel" name="input-phone" id="input-phone"
+                                                placeholder="Telefone" pattern="[0-9]+$">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="date" name="input-date" id="input-date"
+                                                placeholder="Data">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="number" value="1" name="input-quantity"
+                                                id="input-quantity" placeholder="Quantas pessoas">
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-lg btn-block btn-outline-primary"
+                                                type="submit">Reservar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer__page container-fluid bg-warning py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer__page-top row mb-5">
+                            <div class="footer__page-social col-md-3">
+                                <h4>Siga-nos</h4>
+                                <div class="footer__page-links">
+                                    <a href="#">
+                                        <img src="assets/images/social-icons/facebook.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/social-icons/twitter.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/social-icons/instagram.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="footer__page-contact col-md-3">
+                                <h4>Contato</h4>
+                                <div class="footer__page-contact--info">
+                                    <span>Rua vai saber, 380</span><br>
+                                    <span>Salvador, Bahia</span><br>
+                                    <span>Tel.: 71 3333-3333</span><br>
+                                    <span>falacomigo@bruxosbar.com.br</span>
+                                </div>
+                            </div>
+
+                            <div class="footer__page-hours col-md-3">
+                                <h4>Horários</h4>
+                                <div class="footer__page-hours--info">
+                                    <span class="text-info font-weight-bold">(Aberto Agora)</span><br>
+                                    <span>Seg - Sex: 18h00 - 23h59</span><br>
+                                    <span>Sábado: 18:00 - 01h59</span><br>
+                                    <span>Domingo: 18:00 - 04h59</span>
+                                </div>
+                            </div>
+
+                            <div class="footer__page-location col-md-3">
+                                <h4>Como chegar</h4>
+                                <div class="footer__page-location--info">
+                                    Mapa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="footer__page-bottom">
+                            <p class="lead text-center">2020 &copy; Nem todos os direitos são reservados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

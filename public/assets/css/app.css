@@ -1,0 +1,67 @@
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ #override-bs a {
+    text-decoration: none;
+ }
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+    width: 447px;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+
+/* MAIN PAGE */
+
+.main__page-welcome {
+    height: 100vh;
+    background-image: url('../images/background.jpg');
+}
+
+.text-shadow {
+    text-shadow: 3px 2px 8px black;
+}
+
+.header__page a {
+    color: #000;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    transition: all .3s ease-in-out;
+}
+
+.header__page a:hover,
+.header__page .nav li a:hover {
+    color: #fff;    
+}
+
+.card h3 a {
+    color: #484747;
+}
