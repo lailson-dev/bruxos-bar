@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 use app\classes\Routes;
 use app\classes\Uri;
@@ -6,7 +7,9 @@ use app\classes\Uri;
 require "../bootstrap.php";
 
 $routes = [
-	'/' => 'controllers/IndexController.php'
+	'/' => 'controllers/IndexController.php',	
+	'/booking_store' => 'controllers/BookingController.php',
+	'/sucesso' => 'controllers/IndexController.php'
 ];
 
 $uri = Uri::load();
