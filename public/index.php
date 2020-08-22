@@ -7,9 +7,9 @@ use app\classes\Uri;
 require "../bootstrap.php";
 
 $routes = [
-	'/' => 'controllers/IndexController.php',	
-	'/booking_store' => 'controllers/BookingController.php',
-	'/sucesso' => 'controllers/IndexController.php'
+	'/' => 'controllers/site/IndexController.php',	
+	'/booking_store' => 'controllers/site/BookingController.php',
+	'/sucesso' => 'controllers/site/IndexController.php'
 ];
 
 $uri = Uri::load();

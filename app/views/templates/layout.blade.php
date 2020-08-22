@@ -13,20 +13,20 @@
 
 <body id="override-bs">
 
-    @include('includes.header')
+    @include('includes.site.header')
 
     <main class="main__page">
-        @include('includes.welcome')
+        @include('includes.site.welcome')
 
-		@include('includes.about')        
+		@include('includes.site.about')        
 
         <!-- CARDÁPIO -->
-        @include('includes.menu')
+        @include('includes.site.menu')
 
         <!-- RESERVA -->
-        @include('includes.booking')
+        @include('includes.site.booking')
 
-        @include('includes.footer')
+        @include('includes.site.footer')
     </main>
 
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>

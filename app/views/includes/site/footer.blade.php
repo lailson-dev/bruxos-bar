@@ -21,10 +21,12 @@
                     <div class="footer__page-contact col-md-3">
                         <h4>Contato</h4>
                         <div class="footer__page-contact--info">
-                            <span>Rua vai saber, 380</span><br>
-                            <span>Salvador, Bahia</span><br>
-                            <span>Tel.: 71 3333-3333</span><br>
-                            <span>falacomigo@bruxosbar.com.br</span>
+                            @foreach($addressFound as $address )
+                            <span>{{ $address->street }}, {{ $address->number }}</span><br>
+                            <span>{{ $address->city }}, {{ $address->state }}</span><br>
+                            <span>Tel.: {{ $address->phone }}</span><br>
+                            <span>{{ $address->email }}</span>
+                            @endforeach
                         </div>
                     </div>
 
@@ -32,9 +34,9 @@
                         <h4>Horários</h4>
                         <div class="footer__page-hours--info">
                             <span class="text-info font-weight-bold">(Aberto Agora)</span><br>
-                            <span>Seg - Sex: 18h00 - 23h59</span><br>
-                            <span>Sábado: 18:00 - 01h59</span><br>
-                            <span>Domingo: 18:00 - 04h59</span>
+                            @foreach($schedulesFound as $schedule)
+                            <span>{{ $schedule->day }}: {{ $schedule->opening }} - {{ $schedule->closing }}</span><br>
+                            @endforeach
                         </div>
                     </div>
 

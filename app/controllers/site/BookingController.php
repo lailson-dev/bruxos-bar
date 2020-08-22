@@ -1,6 +1,6 @@
 <?php
 
-use app\models\Booking;
+use app\models\site\Booking;
 
 if(isset($_POST)) {
 	$name = filter_input(INPUT_POST, 'input-name', FILTER_SANITIZE_STRING);

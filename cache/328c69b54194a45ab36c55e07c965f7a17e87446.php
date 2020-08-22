@@ -27,4 +27,4 @@
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
     </div>
-</section><?php /**PATH C:\xampp\htdocs\projetos\restaurante\app\views/includes/menu.blade.php ENDPATH**/ ?>
+</section><?php /**PATH C:\xampp\htdocs\projetos\restaurante\app\views/includes/site/menu.blade.php ENDPATH**/ ?>
